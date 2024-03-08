@@ -1,4 +1,5 @@
 ## Searching
+This repository conatins the fundamental problems from searching algorithms.
 
 | Problems                                                              | Solution                                                                                     |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
