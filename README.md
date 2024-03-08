@@ -1,16 +1,7 @@
-# Problem Solving
 
-<table>
-  <thead>
-    <tr>
-      <th>
-        Topics
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td ><a href="https://github.com/sanjay-1458/Problem-Solving/tree/main/Searching%201">Searching</a></td>
-    </tr>
-  </tbody>
-</table>
+<h1 align="center">Problem Solving</h1>
+
+<p align="center">This repository covers various topics from Data Structures and Algorithms (DSA).</p>
+
+- [Searching](https://github.com/sanjay-1458/Problem-Solving/blob/main/Searching%201/<file-name>.<file-extension>)
+
