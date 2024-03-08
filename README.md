@@ -1,4 +1,5 @@
-# Problem-Solving
+# Problem Solving
+
 <table>
   <thead>
     <tr>
@@ -9,7 +10,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://github.com/sanjay-1458/Problem-Solving/tree/main/Searching%201">Searching</a></td>
+      <td ><a href="https://github.com/sanjay-1458/Problem-Solving/tree/main/Searching%201">Searching</a></td>
     </tr>
   </tbody>
 </table>
