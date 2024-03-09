@@ -49,7 +49,7 @@
            </tr>
            <tr>
               <td><a href="https://leetcode.com/problems/get-equal-substrings-within-budget/description/">Get Equal Substrings Within Budget</a></td>
-              <td><a href="https://github.com/sanjay-1458/Problem-Solving/blob/main/Searching/Searching%202/Get%20Equal%20Substrings%20Within%20Budget.cpp"></a>Link</td>
+              <td><a href="https://github.com/sanjay-1458/Problem-Solving/blob/main/Searching/Searching%202/Get%20Equal%20Substrings%20Within%20Budget.cpp">Link</a></td>
            </tr>
            <tr>
               <td><a href="https://www.geeksforgeeks.org/problems/aggressive-cows/1">Aggressive Cows</a></td>
