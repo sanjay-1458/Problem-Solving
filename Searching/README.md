@@ -29,7 +29,11 @@
             </tr>
             <tr>
                 <td><a href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/">Search in Rotated Sorted Array II</a></td>
-                <td><a href="https://github.com/sanjay-1458/Problem-Solving/blob/main/Searching/Searching%201/Search%20in%20Rotated%20Sorted%20Array%20II.cpp">Link</a></td>
+                <td><a href="https://github.com/sanjay-1458/Problem-Solving/blob/main/Searching/Searching%201/Search%20in%20Rotated%20Sorted%20Array%20II.cpp">Link</a> </td>
             </tr>
+           <tr>
+              <td><a href="https://leetcode.com/problems/single-element-in-a-sorted-array/description/">Single Element in a Sorted Array</a></td>
+              <td><a href="https://github.com/sanjay-1458/Problem-Solving/blob/main/Searching/Searching%202/Single%20Element%20in%20a%20Sorted%20Array.cpp">Link</a></td>
+           </tr>
         </tbody>
     </table>
