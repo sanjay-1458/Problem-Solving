@@ -71,6 +71,5 @@
               <td><a href="https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/description/">Minimum Limit of Balls in a Bags</a></td>
               <td><a href="https://github.com/sanjay-1458/Problem-Solving/blob/main/Searching/Searching%203/Minimum%20Limit%20of%20Balls%20in%20a%20Bag.cpp">Link</a></td>
            </tr>
-           
         </tbody>
     </table>
