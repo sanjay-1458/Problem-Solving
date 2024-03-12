@@ -1,4 +1,5 @@
    <h1>Searching Algorithms</h1>
+   <p>This repository contains various questions searching algorithms.</p>
     <table>
         <thead>
             <tr>
