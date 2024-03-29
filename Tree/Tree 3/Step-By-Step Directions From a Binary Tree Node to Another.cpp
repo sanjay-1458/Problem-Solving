@@ -26,7 +26,7 @@ class Solution {
 
     struct Coordinates start_point, end_point;
 
-    void findPath(TreeNode* root, int start, int destination, string start_path, string end_path, string &ans1, string &ans2, Coordinates org) {
+    void findPath(TreeNode* root, int start, int destination, string &start_path, string &end_path, string &ans1, string &ans2, Coordinates org) {
         if (!root)
             return;
 
@@ -48,7 +48,7 @@ class Solution {
         org.y++;
 
         findPath(root->left, start, destination, start_path, end_path, ans1, ans2, org);
-
+        
         org.x--;
         org.y--;
         org.x++;
@@ -61,6 +61,8 @@ class Solution {
         end_path += 'R';
 
         findPath(root->right, start, destination, start_path, end_path, ans1, ans2, org);
+        start_path.pop_back();
+        end_path.pop_back();
     }
 
     TreeNode* lowestCommonAncestor(TreeNode* node, int start, int destination) {
@@ -78,7 +80,7 @@ class Solution {
             return left;
     }
 
-    void findDestinationPath(TreeNode* node, int destination, string path_so_far, string &result) {
+    void findDestinationPath(TreeNode* node, int destination, string &path_so_far, string &result) {
         if (!node)
             return;
 
@@ -92,6 +94,7 @@ class Solution {
         path_so_far.pop_back();
         path_so_far += 'R';
         findDestinationPath(node->right, destination, path_so_far, result);
+        path_so_far.pop_back();
     }
 
 public:
@@ -100,11 +103,11 @@ public:
         string res = "";
 
         if (intersection->val != start && intersection->val != destination) {
-            string ans1 = "", ans2 = "";
+            string ans1 = "", ans2 = "",temp1="",temp2="";
             Coordinates origin;
             origin.x = 0;
             origin.y = 0;
-            findPath(intersection, start, destination, "", "", ans1, ans2, origin);
+            findPath(intersection, start, destination, temp1, temp2, ans1, ans2, origin);
             Point A, B, P;
             A.x = start_point.x;
             A.y = start_point.y;
@@ -125,12 +128,12 @@ public:
                 res += ans2;
             }
         } else {
-            string ans = "";
+            string ans = "",temp="";
             if (intersection->val == start) {
-                findDestinationPath(intersection, destination, "", ans);
+                findDestinationPath(intersection, destination, temp, ans);
                 res = ans;
             } else {
-                findDestinationPath(intersection, start, "", ans);
+                findDestinationPath(intersection, start, temp, ans);
                 for (auto x : ans) {
                     res += 'U';
                 }
@@ -139,4 +142,3 @@ public:
         return res;
     }
 };
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// MLE
