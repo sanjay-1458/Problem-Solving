@@ -5,6 +5,11 @@ class Solution {
 
     const int RIGHT = 1, LEFT = -1, ZERO = 0;
 
+
+
+
+
+    // point left or right to axis
     int directionOfPoint(Point A, Point B, Point P) {
         B.x -= A.x;
         B.y -= A.y;
@@ -65,6 +70,21 @@ class Solution {
         end_path.pop_back();
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     TreeNode* lowestCommonAncestor(TreeNode* node, int start, int destination) {
         if (!node || node->val == start || node->val == destination)
             return node;
@@ -104,6 +124,9 @@ public:
 
         if (intersection->val != start && intersection->val != destination) {
             string ans1 = "", ans2 = "",temp1="",temp2="";
+
+            
+            // coordinates left -/ axis /- right
             Coordinates origin;
             origin.x = 0;
             origin.y = 0;
@@ -115,6 +138,10 @@ public:
             B.y = end_point.y;
             P.x = 0;
             P.y = 0;
+            //////////////////////////////
+
+
+            
             int direction = directionOfPoint(A, B, P);
             if (direction == -1) {
                 for (auto x : ans1) {
