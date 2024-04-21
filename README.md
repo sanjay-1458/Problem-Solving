@@ -5,5 +5,7 @@
 
 - [Searching](https://github.com/sanjay-1458/Problem-Solving/tree/main/Searching) -> Offers a curated collection of problems covering fundamental searching algorithms such as Binary Search and Linear Search.
 - [Tree](https://github.com/sanjay-1458/Problem-Solving/tree/main/Tree) -> Offers a curated collection of problems from Tree data structure.
+- [Trie](https://github.com/sanjay-1458/Problem-Solving/tree/main/Trie) -> Offers a curated collection of problems from Trie data structure.
+- [Graph](https://github.com/sanjay-1458/Problem-Solving/tree/main/Graph) -> Offers a curated collection of problems from Graph data structure.
 
 
