@@ -1,34 +1,30 @@
-bool dfs(int node,vector<int> adj[],vector<int> &pathvis,vector<int>&vis){
-        vis[node]=1;
-        pathvis[node]=1;
-        for(auto x:adj[node]){
-            if(!vis[x]){
-                if(dfs(x,adj,pathvis,vis)==true){
-                    return true;
-                }
-            }
-            else if(pathvis[x]){
-                return true;
-            }
-        }
-        pathvis[node]=0;
-        vis[node]=0;
-        return false;
-    }
-  public:
+public:
     // Function to detect cycle in a directed graph.
     
     bool isCyclic(int v, vector<int> adj[]) {
-        
-        vector<int> vis(v,0);
-        vector<int> pathvis(v,0);
+        vector<int> indeg(v,0);
+        queue<int> q;
         for(int i=0;i<v;++i){
-            if(!vis[i]){
-                if(dfs(i,adj,pathvis,vis)==true){
-                    return true;
+            for(auto x:adj[i]){
+                indeg[x]++;
+            }
+        }
+        for(int i=0;i<v;++i){
+            if(indeg[i]==0){
+                q.push(i);
+            }
+        }
+        vector<int> topo;
+        while(!q.empty()){
+            auto node=q.front();
+            q.pop();
+            topo.push_back(node);
+            for(auto x:adj[node]){
+                indeg[x]--;
+                if(indeg[x]==0){
+                    q.push(x);
                 }
             }
         }
-        return false;
-        // code here
+        return (int)topo.size()!=v;
     }
