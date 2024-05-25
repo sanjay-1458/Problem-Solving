@@ -7,5 +7,4 @@
 - [Tree](https://github.com/sanjay-1458/Problem-Solving/tree/main/Tree) -> Offers a curated collection of problems from Tree data structure.
 - [Trie](https://github.com/sanjay-1458/Problem-Solving/tree/main/Trie) -> Offers a curated collection of problems from Trie data structure.
 - [Graph](https://github.com/sanjay-1458/Problem-Solving/tree/main/Graph) -> Offers a curated collection of problems from Graph data structure.
-
-
+- [Dynamic Programming](https://github.com/sanjay-1458/Problem-Solving/tree/main/Dynamic%20Programming) -> Offers a wide range of problems from Dynamic Programming.
